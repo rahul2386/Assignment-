@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Project Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="Logo">
+        </div>
+        <div class="user-icons">
+            <i class="icon icon-user" aria-label="User"></i>
+            <i class="icon icon-settings" aria-label="Settings"></i>
+            <i class="icon icon-notifications" aria-label="Notifications"></i>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar-container">
+            <div class="sidebar">
+                <div class="upper-sidebar">
+                    <h2>Journey Board</h2>
+                </div>
+                <img src="https://s3-alpha-sig.figma.com/img/fe6e/4937/e192363bc8a2c9c39ade7f24e1906488?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fIE1qJ2PnsYDo1SpxV19ieQ90TGHMxI7PF1~qC3oWbCBU48H6hmyAfU33z5VhATKHDysHRvnC4scBEGfRPIQf3hEY3Qd~0QhdpheMJoYoVOx16hhjkyc~G8uRS1h329IgTDFFoOvIs8DV9BDXmn0gfuSPKpKPqDq~2~PBSxSXLOGZFlecg4Y~lo8~P1NEIi16ICGX7Hss2DMMEmiBNQOT~8s5hwB763H6u3G5aljTYvPUn6M7H5Bq4bcDMpQHnm2o6DH~veY68Pn5TFJBxSDPkli-f2ToL2fa1mEjImUk~CtscARbEWuSkLoLtBgCuMV~iAz9VEZatgy3qe-2gRSrQ__" class="toggle-arrow" alt="Toggle Arrow">
+                <div class="lower-sidebar" onclick="changedata(0)">
+                    <ul>
+                        <li><h3>Explore the world of management</h3></li>
+                        <li>Technical Project Management</li>
+                        <li>Threadbuild</li>
+                        <li>Structure your pointers</li>
+                        <li>4SA Method</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="top-bar">
+                <h6 id="task-title"></h6>
+                <button class="submit-task">Submit Task</button>
+            </div>
+            <div class="outerdescription">
+                <div class="description">
+                    <p id="task-short-description"></p>
+                    <p id="task-long-description"></p>
+                </div>
+            </div>
+            <div class="content" id="assets-container">
+                <!-- Dynamic content will be injected here -->
+            </div>
+        </main>
+        <aside class="right-sidebar">
+            <div class="notice-board">
+                <div class="notice-board-text">
+                    <h2>NOTICE BOARD</h2>
+                </div>
+            </div>
+            <!-- Notices here -->
+        </aside>
+    </div>
+    <div class="floating-buttons">
+        <button class="help">?</button>
+        <button class="settings">⚙️</button>
+        <button class="calendar">📅</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
